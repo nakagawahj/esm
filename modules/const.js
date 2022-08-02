@@ -1,0 +1,3 @@
+export const SOMETHING = 'SOMETHING EXPORTED';
+
+export const UNUSED = 'UNUSED EXPORT';

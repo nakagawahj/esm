@@ -1,0 +1,17 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            /*
+            {
+                "match": ".*",
+                "isAsync": true,
+                "cmd": "echo 'I run for all files.'"
+            },
+            */
+            {
+                "match": "src\\\/.+\\.js$",
+                "cmd": "rollup ${file} --file ${workspaceFolder}/public_html/js/${fileBasename} --format es"
+            },
+        ]
+    }
+}
